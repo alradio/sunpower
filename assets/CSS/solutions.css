@@ -1,0 +1,75 @@
+@import url(./common.css);
+
+.icon{
+    max-width: 50%;
+    margin: 10%;
+    opacity: 50%;
+}
+
+.banniere{
+    padding-left:0;
+    padding-right:0;
+}
+
+h2 {
+    margin-bottom: 3%;
+}
+
+h4{
+    color: var(--bleuMate);
+}
+.icone_solution {
+    padding-bottom: 3%;
+}
+
+/* ESTHETIQUE */
+.esthetique {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 3% 0;
+}
+
+/* LISTE */
+
+.liste h1 {
+    text-align: center;
+    border: 2px solid var(--couleurBleu);
+    border-radius: 50%;
+    width: 20%;
+}
+
+.liste .row > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+.liste p {
+    font-size: 1.2rem;
+}
+
+.liste {
+    padding: 3% 0;
+}
+
+/* CONTACT */
+
+.contact a {
+    text-align: center;
+}
+.contact_button{
+    text-align: center;
+    background-color: var(--couleurBleu);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.contact {
+    padding-bottom: 5%;
+}

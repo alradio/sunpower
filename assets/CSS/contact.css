@@ -1,0 +1,68 @@
+@import url(./common.css);
+
+.banniere {
+    filter: opacity(55%);
+}
+
+.tab-pane {
+    max-width: 50%;
+    padding: 0;
+    color: var(--couleurBleu);
+}
+
+.formulaire {
+    max-width: 50%;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 4%;
+    border: var(--couleurBleu) 1px solid;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.button {
+    max-width: 30%;
+    color: white;
+    background-color: var(--couleurBleu);
+}
+
+/* DESIGN FORMULAIRE */
+
+.nav-tabs .nav-link.active {
+    color: var(--couleurBleu);
+}
+
+.nav-link {
+    color: rgb(75, 75, 75);
+}
+
+/* Réponse négative en cas de formulaire mal rempli */
+.rep-entreprise {
+    color: red;
+}
+.rep-particulier {
+    color: red;
+}
+.rep-syndic {
+    color: red;
+}
+
+/* Réponse positive en cas de formulaire bien rempli */
+
+.rep-entreprisepos {
+    color : var(--couleurVerte);
+}
+
+.rep-particulierpos {
+    color : var(--couleurVerte);
+}
+
+.rep-particulierpos {
+    color : var(--couleurVerte);
+}

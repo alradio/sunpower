@@ -1,0 +1,116 @@
+@import url(./common.css);
+
+/* BANNIERE */
+.banniere .img-fluid {
+    width: 100%;
+    filter: opacity(55%);
+}
+
+.banniere {
+    position: relative;
+}
+
+.logo_banniere {
+    position: absolute;
+    width: 35%;
+    top: 35%;
+    left: 60%;
+}
+
+/* TECHNOLOGIE */
+
+
+.technologie {
+    text-align: center;
+    position: relative;
+}
+.panneau {
+    width: 90%;
+}
+
+.pastille {
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    top: 8%;
+}
+
+/* REDISTRIBUTION */
+
+.redistribution p {
+    padding-top : 3%;
+    margin: 0;
+}
+
+.redistribution .col-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width : 768px) {
+    .redistribution .col-3 {
+        display: none;
+    }
+    
+}
+
+.redistribution img {
+    max-width: 60%;
+    opacity: 50%;
+}
+
+/* SERVICE */
+
+.service {
+    margin-bottom: 3%;
+}
+
+
+/* PROJET */
+
+.projet_txt {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.projet_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAP */
+
+.map li {
+    margin-bottom: 2%;
+}
+
+/* CONTACT */
+
+.contact {
+    text-align: center;
+    margin-top: 3%;
+}
+.contact img {
+    max-width: 50%;
+    opacity: 40%;
+    margin: 5% 0;
+}
+.contact a {
+    color: var(--couleurVerte);
+}
+
+.logo_contact {
+    position: relative;
+}
+
+@media (max-width: 500px) {
+    .contact h2 {
+        font-size: 1rem;
+    }
+}
+
+

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logos/SunPower.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>Contact - Sunpower</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex justify-content-center">
+            <div class="container">
+                <img src="/assets/logos/Logo_SunPower.png" alt="Le logo SunPower" class="nav-logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="presentation.html">Qui sommes-nous ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produits.html">Nos produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="solutions.html">Nos solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BANNIERE -->
+    <div class="container-fluid banniere">
+        <img src="assets/img/pexels-los-muertos-crew-8853502-2.jpg" alt="Photo d'un technicien" class="img-fluid">
+    </div>
+    <main>
+        <div class="container">
+            <h1>Vous envisagez de passer au solaire ? Remplissez ce formulaire ou appelez-nous directement au 0800 300
+                301 <span>(prix d'un appel local)</span></h1>
+        </div>
+        <div class="container formulaire">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="entreprise-tab" data-bs-toggle="tab"
+                        data-bs-target="#entreprise" type="button" role="tab" aria-controls="entreprise"
+                        aria-selected="true">Entreprise ou collectivité</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="particulier-tab" data-bs-toggle="tab" data-bs-target="#particulier"
+                        type="button" role="tab" aria-controls="particulier" aria-selected="false">Particuliers</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="syndicat-tab" data-bs-toggle="tab" data-bs-target="#syndicat"
+                        type="button" role="tab" aria-controls="syndicat" aria-selected="false">Syndicat de
+                        propriété</button>
+                </li>
+            </ul>
+        </div>
+
+        <!--FORMULAIRE ENTREPRISES OU COLLECTIVITÉ -->
+        <div class="tab-content">
+            <div class="tab-pane active container" id="entreprise" role="tabpanel" aria-labelledby="entreprise-tab">
+                <form method="#" action="#" id="formEnt">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="raisonEnt">Raison sociale*</label> :<br>
+                            <input type="text" name="raisonEnt" id="raisonEnt" value="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="nomEnt">Nom*</label> : <br>
+                            <input type="text" name="nomEnt" id="nomEnt" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="prenomEnt">Prénom*</label> : <br>
+                            <input type="text" name="prenomEnt" id="prenomEnt" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="fonctionEnt">Fonction</label> :<br>
+                            <input type="text" name="fonctionEnt" id="fonctionEnt" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="adresseEnt">Adresse*</label> : <br>
+                            <input type="text" name="adresseEnt" id="adresseEnt" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="cpEnt">Code Postal*</label> : <br>
+                            <input type="number" name="cpEnt" id="cpEnt" maxlength="5"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="villeEnt">Ville*</label> : <br>
+                            <input type="text" name="villeEnt" id="villeEnt" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="cedexEnt">Cedex</label> : <br>
+                            <input type="number" name="cedexEnt" id="cedexEnt" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="telephoneEnt">Téléphone</label> : <br>
+                            <input type="number" name="telephoneEnt" id="telephoneEnt" maxlength="10"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="mailEnt">Email*</label> : <br>
+                            <input type="email" name="mailEnt" id="mailEnt" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="descriptionEnt">Description du projet</label> :<br>
+                            <textarea rows="3" name="descriptionEnt" id="descriptionEnt" maxlength="600"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></textarea>
+                        </div>
+                    </div>
+                    <p class="rep-entreprise"></p>
+                    <p class="rep-entreprisepos"></p>
+                    <div class="row check">
+                        <div class="col-1"></div>
+                        <div class="col-12 col-md-1">
+                            <input type="checkbox" name="autorisationEnt" id="autorisationEnt" />
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <label for="autorisationEnt">*J'accepte que Sunpower et ses distributeurs indépendants dans
+                                ma
+                                zone de service, me contactent à l'adresse électronique ou au numéro de téléphone
+                                fournis (y compris par texto, SMS et MMS), même si ce numéro figure sur liste rouge, ou
+                                dans un registre d'exclusion du même type.</label>
+                        </div>
+                    </div>
+                    <div class="row check">
+                        <div class="col-0 col-md-1"></div>
+                        <div class="col-12 col-md-1">
+                            <input type="checkbox" name="pub" id="pub" />
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <label for="pub">J'aimerais recevoir par e-mail des mises à jour et des informations sur les
+                                nouveautés, les produits et les offres de Sunpower. Vous pouvez vous désabonner à tout
+                                moment.</label>
+                        </div>
+                    </div>
+                    <div class="row">* Champs obligatoires</div>
+                    <div class="row d-flex justify-content-center">
+                        <input type="submit" value="Envoyer" class="button">
+                    </div>
+                </form>
+            </div>
+
+            <!-- FORMULAIRE PARTICULIER -->
+            <div class="tab-pane container" id="particulier" role="tabpanel" aria-labelledby="particulier-tab">
+                <form method="#" action="#" id="formPart">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="nomPart">Nom*</label> : <br>
+                            <input type="text" name="nomPart" id="nomPart" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="prenomPart">Prénom*</label> : <br>
+                            <input type="text" name="prenomPart" id="prenomPart" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="adressePart">Adresse*</label> : <br>
+                            <input type="text" name="adressePart" id="adressePart" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="cpPart">Code Postal*</label> : <br>
+                            <input type="number" name="cpPart" id="cpPart" maxlength="5"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="villePart">Ville*</label> : <br>
+                            <input type="text" name="villePart" id="villePart" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="cedexPart">Cedex</label> : <br>
+                            <input type="number" name="cedexPart" id="cedexPart" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="telephonePart">Téléphone</label> : <br>
+                            <input type="tel" name="telephonePart" id="telephonePart" maxlength="10"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="mailPart">Email*</label> : <br>
+                            <input type="email" name="mailPart" id="mailPart" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="descriptionPart">Description du projet</label> :<br>
+                            <textarea rows="3" name="descriptionPart" id="descriptionPart" maxlength="600"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></textarea>
+                            <p class="rep-particulier"></p>
+                            <p class="rep-particulierpos"></p>
+                        </div>
+                    </div>
+                    <div class="row check">
+                        <div class="col-1"></div>
+                        <div class="col-12 col-md-1">
+                            <input type="checkbox" name="autorisationPart" id="autorisationPart" />
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <label for="autorisation">*J'accepte que Sunpower et ses distributeurs indépendants dans ma
+                                zone de service, me contactent à l'adresse électronique ou au numéro de téléphone
+                                fournis (y compris par texto, SMS et MMS), même si ce numéro figure sur liste rouge, ou
+                                dans un registre d'exclusion du même type.</label>
+                        </div>
+                    </div>
+                    <div class="row check">
+                        <div class="col-1"></div>
+                        <div class="col-12 col-md-1">
+                            <input type="checkbox" name="pub" id="pub" />
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <label for="pub">J'aimerais recevoir par e-mail des mises à jour et des informations sur les
+                                nouveautés, les produits et les offres de Sunpower. Vous pouvez vous désabonner à tout
+                                moment.</label>
+                        </div>
+                    </div>
+                    <div class="row">* Champs obligatoires</div>
+                    <div class="row d-flex justify-content-center">
+                        <input type="submit" value="Envoyer" class="button">
+                    </div>
+                </form>
+            </div>
+
+            <!-- FORMULAIRE SYNDICAT -->
+            <div class="tab-pane container" id="syndicat" role="tabpanel" aria-labelledby="syndicat-tab">
+                <form method="#" action="#" id="formSyndic">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="raisonSyndic">Raison sociale*</label> :<br>
+                            <input type="text" name="raisonSyndic" id="raisonSyndic" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="nomSyndic">Nom*</label> : <br>
+                            <input type="text" name="nomSyndic" id="nomSyndic" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="prenomSyndic">Prénom*</label> : <br>
+                            <input type="text" name="prenomSyndic" id="prenomSyndic" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="fonctionSyndic">Fonction</label> :<br>
+                            <input type="text" name="fonctionSyndic" id="fonctionSyndic" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="adresseSyndic">Adresse*</label> : <br>
+                            <input type="text" name="adresseSyndic" id="adresseSyndic" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="cpSyndic">Code Postal*</label> : <br>
+                            <input type="number" name="cpSyndic" id="cpSyndic" maxlength="5"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="ville">Ville*</label> : <br>
+                            <input type="text" name="ville" id="villeSyndic" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="cedexSyndic">Cedex</label> : <br>
+                            <input type="number" name="cedexSyndic" id="cedexSyndic" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <label for="telephoneSyndic">Téléphone</label> : <br>
+                            <input type="tel" name="telephoneSyndic" id="telephoneSyndic" maxlength="10"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <label for="mailSyndic">Email*</label> : <br>
+                            <input type="email" name="mailSyndic" id="mailSyndic" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="descriptionSyndic">Description du projet</label> :<br>
+                            <textarea rows="3" name="descriptionSyndic" id="descriptionSyndic" maxlength="600"
+                                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></textarea>
+                            <p class="rep-syndic"></p>
+                            <p class="rep-syndicpos"></p>
+                        </div>
+                    </div>
+                    <div class="row check">
+                        <div class="col-1"></div>
+                        <div class="col-12 col-md-1">
+                            <input type="checkbox" name="autorisationSyndic" id="autorisationSyndic" />
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <label for="autorisation">*J'accepte que Sunpower et ses distributeurs indépendants dans
+                                ma zone de service, me contactent à l'adresse électronique ou au numéro de téléphone
+                                fournis (y compris par texto, SMS et MMS), même si ce numéro figure sur liste rouge,
+                                ou dans un registre d'exclusion du même type.</label>
+                        </div>
+                    </div>
+                    <div class="row check">
+                        <div class="col-1"></div>
+                        <div class="col-12 col-md-1">
+                            <input type="checkbox" name="pub" id="pub" />
+                        </div>
+                        <div class="col-12 col-md-10">
+                            <label for="pub">J'aimerais recevoir par e-mail des mises à jour et des informations sur
+                                les nouveautés, les produits et les offres de Sunpower. Vous pouvez vous désabonner
+                                à tout moment.</label>
+                        </div>
+                    </div>
+                    <div class="row">* Champs obligatoires</div>
+                    <div class="row d-flex justify-content-center">
+                        <input type="submit" value="Envoyer" class="button">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="mentions.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+        <a href="http://linkedin.com"><img src="assets/logos/linkedin-logo.png" alt="logo linkedin" class="img-fluid"></a>
+        <a href="https://www.youtube.com/results?search_query=sunpower"><img src="assets/logos/youtube.png" alt="logo Youtube" class="img-fluid"></a>
+        <a href="https://facebook.com"><img src="assets/logos/facebook.png" alt="logo Facebook" class="img-fluid"></a>
+        <a href="https://twitter.com"><img src="assets/logos/Twitter-Logo.png" alt="logo Twitter" class="img-fluid"></a>
+        <p>&copy 2021 - Made with Bootstrap by Olivier, Josué &amp; Alexandre</p>
+    </footer>
+
+    <script type="text/javaScript" src="assets/js/form.js"></script>
+
+</body>
+
+</html>

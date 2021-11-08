@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logos/SunPower.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <link rel="stylesheet" href="assets/CSS/accueil.css">
+    <title>Accueil - Sunpower</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top d-flex justify-content-center">
+            <div class="container">
+                <img src="/assets/logos/Logo_SunPower.png" alt="Le logo SunPower" class="nav-logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="presentation.html">Qui sommes-nous ?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produits.html">Nos produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="solutions.html">Nos solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BANNIERE -->
+        <section class="container-fluid banniere">
+            <p>Produisez de l’énergie,<br>
+                abritez votre voiture et<br>
+                préservez notre planète
+            </p>
+            <a href="produits.html"><button>Découvrez nos produits</button></a>
+        </section>
+        <!-- PILIER -->
+        <section class="container pilier">
+            <h1>Notre pilier, les ombrières solaires : une solution innovante à fort rendement.</h1>
+            <div class="row pilier_txt">
+                <div class="col-sm-12 col-md-8">
+                    <p>Nos <em>ombrières</em> sont des <em>accumulateurs à haute densité</em> d’énergie. En comparaison avec des panneaux
+                        solaires classiques, notre solution offre un rendement de plus de 50% d’énergie.</p>
+                    <p>En effet, elles sont le fruit d’une <em>optimisation technologique</em> de pointe, qui permet grâce à une
+                        <em>gestion intelligente</em> de redistribuer le surplus d'énergie.</p>
+                    <p>Constituée d’une surface recouverte de <em>panneaux photovoltaïques</em> soutenue par des poteaux, elle
+                        est à la fois un abri pour les voitures et une source d’énergie.</p>
+                </div>
+                <div class="col-sm-12 col-md-4 reduc">
+                    <img src="assets/logos/Cercle_reduc.png" alt="+50% de rendement par rapport à un panneau classique"
+                        class="align_img">
+                </div>
+            </div>
+            <div class="row">
+                <h2>Participez à la transition énergétique grâce à cette solution de parking solaire couvert en
+                    produisant une énergie éco-responsable.</h2>
+            </div>
+        </section>
+        <!-- IMAGE PANNEAU PHOTOVOLTAIQUE -->
+        <section class="container-fluid">
+            <img src="assets/img/pexels-pixabay-356049.jpg" alt="Une photo de panneaux photovoltaïques"
+                class="img-fluid">
+        </section>
+        <!-- COLLECTIVITES -->
+        <section class="container coll_par">
+            <div class="row collect">
+                <div class="col-sm-12 col-md-6">
+                    <h2>Collectivités, entreprises et syndics : nous avons des solutions pour vous.</h2>
+                    <p>Notre expertise s’appuie sur la démonstration financée par l’ADEME : une convergence entre
+                        l’habitat et le transport doit émerger afin de favoriser l'essor des <em>véhicules électriques</em>.</p>
+                    <p>Nos ombrières sont un moyen de concourir à l'objectif fixé par la loi de 2018, <em>Energie et Climat</em>
+                        : la <em>neutralité carbone</em> à l’horizon 2050.</p>
+                    <p>Nos produits sont adaptables en fonction des réglementations, des normes et de vos contraintes.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 align_img">
+                    <img src="assets/img/pexels-kindel-media-9799756.jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <!-- PARTICULIERS -->
+            <div class="row part">
+                <div class="col-sm-12 order-2 col-md-6 order-md-1 align_img">
+                    <img src="assets/img/simulation_ombriere.jpg" alt="Rendu 3D d'une ombrière" class="img-fluid">
+                </div>
+                <div class="col-sm-12 order-1 col-md-6 order-md-2">
+                    <h2>Particuliers</h2>
+                    <p>Nos produits sont aussi adaptés à vos besoins.</p>
+                    <p>Nous sommes en capacité d'harmoniser nos <em>ombrières</em> à l’esthétique de votre propriété.</p>
+                    <p>Vous pouvez grâce à leurs <em>performances énergétiques</em> utiliser le surplus produit pour alimenter
+                        votre maison individuelle, selon vos besoins.</p>
+                </div>
+            </div>
+            <div class="row coll_par_contact">
+                <h2><a href="contact.html">Contactez-nous et nous réaliserons ensemble une étude personnalisée.</a></h2>
+
+            </div>
+        </section>
+        <!-- MAP -->
+        <section class="container">
+            <h1>Découvrez nos implantations</h1>
+            <div class="col-lg-12 mx-auto">
+                <div id="mapid"></div>
+            </div>
+        </section>
+        <!-- FINANCEMENT -->
+        <section class="container">
+            <div class="row financement">
+                <div class="col-sm-12 col-md-8">
+                    <h2>Nous mettons notre expertise pour vous accompagner dans votre stratégie énergétique.</h2>
+                    <p>Relevons ensemble le défi de la <em>transition énergétique</em>.</p>
+                    <p>Notre équipe est à votre écoute. Elle prendra en compte vos contraintes pour vous proposer une
+                        <em>solution sur mesure</em> et adaptée à vos besoins. </p>
+                </div>
+                <div class="col-sm-12 col-md-4 align_img">
+                    <img src="assets/img/financement-bancaire.jpeg" alt="Image de financement" class="img-fluid">
+                </div>
+            </div>
+            <div class="row financement_button">
+                <a href="solutions.html"><button>Se mettre au vert</button></a>
+            </div>
+        </section>
+        <!-- RECHERCHE ET DEVELOPPEMENT -->
+        <section class="container rd">
+            <h1>Notre ADN : la recherche & le développement</h1>
+            <div class="row">
+                <a href="presentation.html#frise"><img src="assets/img/rd.jpeg"
+                        alt="Représentation de la recherche et du développement" class="img-fluid"></a>
+            </div>
+        </section>
+        <!-- PARTENAIRES -->
+        <section class="container partenaires">
+            <h1>Ils nous font confiance</h1>
+            <div class="row logo_partenaires">
+                <div class="col-sm-6 col-md-3"><a href="https://www.laregion.fr/"><img
+                            src="assets/logos/langfr-800px-Logo_Occitanie_2017.svg.png" alt="Logo de la région Occitanie"
+                            class="img-fluid"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="https://www.montpellier.fr/"><img
+                            src="assets/logos/800px-Logo_Montpellier_Méditerranée_Métropole.svg.png" alt="Logo de Montpellier"
+                            class="img-fluid"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="https://herault.fr/"><img src="assets/logos/Hérault_(logo).svg.png" alt="Logo de l'Hérault"
+                            class="img-fluid"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="https://www.toulouse.fr/"><img
+                            src="assets/logos/TLSE_METROPOLE_logo_couleur_positif-1024x512.jpg" alt="Logo de Toulouse Métropole"
+                            class="img-fluid"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="https://www.ines-solaire.org/"><img src="assets/logos/Logo_ines.jpg" alt="Logo de l'INES"
+                            class="img-fluid"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="https://www.groupe-psa.com/fr/"><img src="assets/logos/langfr-1920px-Groupe_PSA_logo.svg.png"
+                            alt="Logo de PSA" class="img-fluid"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="https://www.ademe.fr/"><img src="assets/logos/Logo_ADEME.svg.png" alt="Logo de l'ADEME"
+                            class="img-fluid"></a></div>
+                <div class="col-sm-6 col-md-3"><a href="https://www.cea.fr/"><img src="assets/logos/langfr-1024px-CEA_logo_nouveau.svg.png"
+                            alt="Logo du CEA" class="img-fluid"></a></div>
+            </div>
+            <div class="row financement_button">
+                <a href="presentation.html#frise"><button>En savoir plus</button></a>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section class="container contact">
+            <h1>Contact</h1>
+            <div class="row">
+                <div class="col-4 align_img">
+                    <a href="contact.html"><button class="contact_button">Entreprise ou collectivité</button></a>
+                </div>
+                <div class="col-4 align_img">
+                    <a href="contact.html#particulier"><button class="contact_button">Particulier</button></a>
+                </div>
+                <div class="col-4 align_img">
+                    <a href="contact.html"><button class="contact_button">Syndic de copropriété</button></a>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+    </main>
+    <footer>
+        <a href="mentions.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+        <a href="http://linkedin.com"><img src="assets/logos/linkedin-logo.png" alt="logo linkedin" class="img-fluid"></a>
+        <a href="https://www.youtube.com/results?search_query=sunpower"><img src="assets/logos/youtube.png" alt="logo Youtube" class="img-fluid"></a>
+        <a href="https://facebook.com"><img src="assets/logos/facebook.png" alt="logo Facebook" class="img-fluid"></a>
+        <a href="https://twitter.com"><img src="assets/logos/Twitter-Logo.png" alt="logo Twitter" class="img-fluid"></a>
+        <p>&copy 2021 - Made with Bootstrap by Olivier, Josué &amp; Alexandre</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* NAVBAR------------------------------------------ */
+
+header img {
+    width: 10%;
+}
+.navbar-collapse {
+    flex-grow: 0;
+}
+.navbar-nav {
+    margin-right: 0 !important;
+}
+/* ________________________________________________ */
+:root{
+    --couleurBleu: #3264A6;
+    --couleurVerte: #9ABf4A;
+    --couleurBlanche: white;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.align_img {
+    text-align: center;
+}
+
+em {
+    font-weight: 900;
+    font-style: normal;
+    color: var(--couleurBleu)
+}
+
+.row {
+    padding: 0 3%;
+}
+
+h1{
+    font-weight: bold;
+    color: var(--couleurBleu);
+    font-size: 2rem;
+    margin: 3% 0 3% 0;
+    text-align: left;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--couleurVerte)
+}
+/* FOOTER */
+footer {
+    display: flex;
+    background-color: #3264a6a3;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    width: 14%;
+}
+
+footer p {
+    margin: 0;
+    width: 16%;
+    font-size: 0.8rem;
+}
+
+footer .img-fluid {
+   width: 30%;
+}
+
+@media (min-width: 992px) {
+    footer .img-fluid {
+        max-width: 20%;
+    }
+}
+
+@media (min-width: 1366px) {
+    footer .img-fluid {
+       width: 10%;
+    }
+}
+
+/* MENTIONS LEGALES ET CGU */
+.mentions h1, .cgu h1{
+    margin-top: 10%;
+}
+
+/* IMPLANTATION DE LA CARTE */
+
+#mapid {
+    height: 40vh;
+    width: 100%;
+}

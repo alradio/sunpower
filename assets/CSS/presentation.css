@@ -1,0 +1,133 @@
+@import url(./common.css);
+
+/* BANNIERE */
+.banniere .img-fluid {
+    width: 100%;
+    filter: opacity(35%);
+}
+
+.banniere {
+    position: relative;
+}
+
+.logo_banniere {
+    position: absolute;
+    width: 45%;
+    top: 30%;
+    left: 30%;
+}
+
+/* FIRST_SEC ------------------------------------------- */
+
+.first_sect p {
+    margin: 0;
+}
+
+.gauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gauche img {
+    max-width: 60%;
+}
+
+.droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 5% 0;
+}
+
+/* DIRIGEANTS _______________________________________*/
+.dirigeants {
+    text-align: center;
+}
+.reseau_dirigeants img{
+    max-width: 15%;
+    margin: 0 2%;
+}
+
+.photo_dirigeants img {
+    border-radius: 40%;
+}
+
+.nom_dirigeants, .bio_dirigeants {
+    display: flex;
+    align-items: center;
+}
+
+.nom_dirigeants h3, .dirigeants p {
+    margin: 2% 0;
+}
+
+.dirigeants_button button {
+    margin-top: 8%;
+    text-align: center;
+    background-color: var(--couleurBleu);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+}
+
+/* FRISE ----------------------------------------------- */
+
+.frise p {
+    margin: 0;
+}
+
+.frise_txt, .frise_date{
+    display: flex;
+    align-items: center;
+}
+
+.frise_date {
+    justify-content: center;
+    border-top: 3px solid var(--couleurBleu);
+}
+
+.frise_date h1 {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .frise_date h1{
+        font-size: 1.3rem
+    }
+}
+.frise_ligne {
+    border-right: 3px solid var(--couleurBleu);
+}
+
+.frise_ligne_dot {
+    border-right: 3px dotted var(--couleurBleu);
+}
+
+.frise_contenu .row {
+    padding-left: 0;
+}
+
+.frise_logo img {
+    max-width: 60%;
+    padding: 2%;
+}
+
+.frise_espace {
+    margin-bottom: 5%;
+}
+
+.frise_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.futur {
+    border-top: 3px dotted var(--couleurVerte);
+}
