@@ -1,9 +1,9 @@
-@import url(./common.css);
+@import url(common.css);
 
 /* BANNIERE */
 
 .banniere {
-    background-image: url(/assets/img/Pro_Solutions_Ombriere_TOP.jpg);
+    background-image: url(../img/Pro_Solutions_Ombriere_TOP.jpg);
     background-size: cover;
     height: 70vh;
     display: flex;
